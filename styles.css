@@ -725,3 +725,10 @@ section::after {
     background: linear-gradient(135deg, #0a1e2e 0%, #16213e 100%);
     border-top: 3px solid #FFB703;
 }
+
+/* Project Tags - Add commas between skills */
+.project-tags span:not(:last-child)::after {
+    content: ", ";
+}
+
+}
