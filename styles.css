@@ -732,3 +732,98 @@ section::after {
 }
 
 }
+
+/* ======================== */
+/* KEY HIGHLIGHTS SECTION */
+/* ======================== */
+
+.highlights {
+    background: linear-gradient(135deg, #16213e 0%, #1a2839 50%, #0f3460 100%);
+    padding: 60px 0;
+    position: relative;
+    border-top: 3px solid #00D9FF;
+}
+
+.highlights::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 183, 3, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.highlight-card {
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.1) 0%, rgba(255, 183, 3, 0.05) 100%);
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    border: 2px solid #00D9FF;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #FFB703, transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-10px);
+    border-color: #FFB703;
+    background: linear-gradient(135deg, rgba(255, 183, 3, 0.15) 0%, rgba(0, 217, 255, 0.05) 100%);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+}
+
+.highlight-card:hover::before {
+    opacity: 1;
+}
+
+.highlight-icon {
+    font-size: 3rem;
+    color: #00D9FF;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.highlight-card:hover .highlight-icon {
+    color: #FFB703;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+.highlight-card h3 {
+    color: #00D9FF;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-card p {
+    color: #b0c4de;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
