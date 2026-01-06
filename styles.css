@@ -581,3 +581,143 @@ body {
 .contact-box a:hover {
     color: #FFB703;
 }
+
+/* ===================== */
+/* SECTION DIFFERENTIATION */
+/* ===================== */
+
+/* Hero Section - Gradient with animated background */
+.hero {
+    background: linear-gradient(135deg, #0a1e2e 0%, #16213e 50%, #0f3460 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    min-height: 100vh;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 217, 255, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 183, 3, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(20px); }
+}
+
+/* About Section - Complementary color */
+.about {
+    background: linear-gradient(135deg, #16213e 0%, #0f3460 50%, #1a2839 100%);
+    padding: 80px 0;
+    position: relative;
+    border-top: 3px solid #00D9FF;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 2px;
+    height: 60%;
+    background: linear-gradient(to bottom, transparent, #FFB703, transparent);
+    transform: translateY(-50%);
+}
+
+/* Projects Section - Subtle pattern */
+.projects {
+    background: linear-gradient(135deg, #0f3460 0%, #1a2839 50%, #16213e 100%);
+    padding: 80px 0;
+    position: relative;
+    border-top: 3px dashed #FFB703;
+}
+
+.projects::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 2px;
+    height: 60%;
+    background: linear-gradient(to bottom, transparent, #00D9FF, transparent);
+    transform: translateY(-50%);
+}
+
+/* Skills Section - Different accent */
+.skills {
+    background: linear-gradient(135deg, #1a2839 0%, #16213e 50%, #0f3460 100%);
+    padding: 80px 0;
+    position: relative;
+    border-top: 3px solid #FFB703;
+}
+
+.skills::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 2px;
+    height: 60%;
+    background: linear-gradient(to bottom, transparent, #00D9FF, transparent);
+    transform: translateY(-50%);
+}
+
+/* Contact Section - Warm gradient */
+.contact {
+    background: linear-gradient(135deg, #16213e 0%, #1a2839 50%, #0f3460 100%);
+    padding: 80px 0;
+    position: relative;
+    border-top: 3px solid #00D9FF;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #FFB703, transparent);
+    transform: translateX(-50%);
+}
+
+/* Add divider lines between sections */
+section {
+    position: relative;
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #00D9FF, transparent);
+    opacity: 0.3;
+}
+
+/* Footer special styling */
+.footer {
+    background: linear-gradient(135deg, #0a1e2e 0%, #16213e 100%);
+    border-top: 3px solid #FFB703;
+}
