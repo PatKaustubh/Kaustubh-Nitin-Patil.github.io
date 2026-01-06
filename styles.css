@@ -146,6 +146,10 @@ body {
     background: rgba(0, 217, 255, 0.03);
 }
 
+.about p {
+    margin-bottom: 2rem;
+}
+
 .about h2,
 .experience h2,
 .projects h2,
