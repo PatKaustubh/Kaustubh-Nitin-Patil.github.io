@@ -536,3 +536,48 @@ body {
         gap: 1rem;
     }
 }
+
+.contact-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-box {
+    background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid #00D9FF;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.2);
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 217, 255, 0.4);
+    border-color: #FFB703;
+}
+
+.contact-box h3 {
+    color: #00D9FF;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.contact-box p {
+    color: var(--text-light);
+    margin: 0;
+}
+
+.contact-box a {
+    color: #00D9FF !important;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-box a:hover {
+    color: #FFB703;
+}
