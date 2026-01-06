@@ -29,7 +29,7 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Transforming Data into Insights</h1>
+                <h1 class="hero-title">Transforming Data into <span class="highlight">Insights</span></h1>
                 <p class="hero-subtitle">Building intelligent solutions with Machine Learning & Data Analytics</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -42,135 +42,187 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a Data Scientist / Data Analyst with an MS in Data Science and hands-on experience turning raw data into clear, actionable insights. I enjoy working across the full workflow – from writing efficient SQL queries and cleaning data in Python to building machine learning models and presenting results through interactive dashboards. My project experience includes attrition prediction, time-series forecasting with Prophet, and automated reporting in Power BI, where I've focused on solving real business problems like churn reduction, planning accuracy, and process efficiency. I'm particularly interested in ML, NLP, and practical AI applications, and I'm actively building projects that combine these with robust engineering and analytics practices. This GitHub showcases my data science projects, experiments, and learning journey.
-        </n>
-            </p>
-            <div class="about-highlights">
-                <div class="highlight">
-                    <h3>Education</h3>
-                    <p>Master's Degree in Data Science</p>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Data Scientist and Data Analyst with a Master's degree in Data Science, specializing in turning complex data into actionable insights. With hands-on experience across the entire data science pipeline—from SQL optimization and Python data manipulation to building predictive models and interactive dashboards—I'm passionate about solving real-world business problems through data-driven solutions.</p>
+                    
+                    <p>My expertise spans machine learning, time series forecasting, statistical analysis, and data engineering. I've successfully delivered projects focused on churn reduction, demand forecasting, and process optimization. I'm particularly interested in ML/NLP applications and am actively exploring advanced techniques like RAG systems and transformer architectures.</p>
                 </div>
-                <div class="highlight">
-                    <h3>Focus</h3>
-                    <p>ML, Deep Learning, NLP, Time Series</p>
-                </div>
-                <div class="highlight">
-                    <h3>Location</h3>
-                    <p>Mumbai, Maharashtra, India</p>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <p><strong>Master's Degree in Data Science</strong></p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> India</p>
+                    </div>
+                    <div class="about-card">
+                        <h3><i class="fas fa-target"></i> Focus Areas</h3>
+                        <p>Machine Learning, Deep Learning, NLP, Time Series Forecasting, Statistical Analysis</p>
+                    </div>
+                    <div class="about-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                        <p><strong>Mumbai, Maharashtra</strong></p>
+                        <p>India</p>
+                    </div>
+                    <div class="about-card">
+                        <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                        <p>Project-based experience in attrition prediction, forecasting, and BI dashboard development</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Featured Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Featured Projects</h2>
+            <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-icon"><i class="fas fa-brain"></i></div>
-                    <h3>Machine Learning Model</h3>
-                    <p>Built a predictive ML model using scikit-learn with 85%+ accuracy. Implemented SMOTE for handling imbalanced data.</p>
-                    <div class="project-tags">
-                        <span>Python</span><span>Scikit-learn</span><span>Data Balancing</span>
+                    <h3>Machine Learning Model for Churn Prediction</h3>
+                    <p>Built a predictive classification model using Scikit-learn with 85%+ accuracy. Implemented SMOTE for handling imbalanced datasets and performed extensive feature engineering.</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Data Balancing</span>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Time Series Forecasting</h3>
-                    <p>Implemented ARIMA and Prophet models for time series analysis. Achieved strong forecast accuracy with seasonal decomposition.</p>
-                    <div class="project-tags">
-                        <span>Prophet</span><span>ARIMA</span><span>Forecasting</span>
+                    <h3>Time Series Forecasting with Prophet & ARIMA</h3>
+                    <p>Implemented ARIMA and Prophet models for demand forecasting with strong accuracy. Applied seasonal decomposition and trend analysis for actionable business insights.</p>
+                    <div class="tech-tags">
+                        <span>Prophet</span>
+                        <span>ARIMA</span>
+                        <span>Forecasting</span>
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-database"></i></div>
-                    <h3>Data Analysis Dashboard</h3>
-                    <p>Created interactive dashboards using Python for EDA. Performed SQL optimization for large datasets and data quality checks.</p>
-                    <div class="project-tags">
-                        <span>SQL</span><span>Python</span><span>Pandas</span>
+                    <div class="project-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Interactive Data Analysis Dashboard</h3>
+                    <p>Created comprehensive interactive dashboards using Python and Pandas for exploratory data analysis. Optimized SQL queries for 10M+ row datasets with performance improvements.</p>
+                    <div class="tech-tags">
+                        <span>SQL</span>
+                        <span>Python</span>
+                        <span>Pandas</span>
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-network-wired"></i></div>
-                    <h3>Deep Learning Classification</h3>
-                    <p>Developed neural networks using TensorFlow and PyTorch for image classification. Implemented data augmentation and regularization techniques.</p>
-                    <div class="project-tags">
-                        <span>TensorFlow</span><span>PyTorch</span><span>CNN</span>
+                    <div class="project-icon"><i class="fas fa-image"></i></div>
+                    <h3>Deep Learning Image Classification</h3>
+                    <p>Developed CNN models using TensorFlow and PyTorch for image classification. Implemented data augmentation, regularization, and transfer learning techniques.</p>
+                    <div class="tech-tags">
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>CNN</span>
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-language"></i></div>
-                    <h3>NLP Text Analysis</h3>
-                    <p>Built NLP models for sentiment analysis and text classification. Explored RAG systems and modern transformer architectures.</p>
-                    <div class="project-tags">
-                        <span>NLP</span><span>RAG</span><span>Transformers</span>
+                    <div class="project-icon"><i class="fas fa-comments"></i></div>
+                    <h3>NLP Text Analysis & Sentiment Classification</h3>
+                    <p>Built NLP models for sentiment analysis and text classification. Explored RAG systems and modern transformer architectures for advanced text understanding.</p>
+                    <div class="tech-tags">
+                        <span>NLP</span>
+                        <span>RAG</span>
+                        <span>Transformers</span>
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-cube"></i></div>
-                    <h3>Model Deployment</h3>
-                    <p>Containerized ML models using Docker and Kubernetes. Deployed APIs for model serving and created CI/CD pipelines.</p>
-                    <div class="project-tags">
-                        <span>Docker</span><span>Kubernetes</span><span>FastAPI</span>
+                    <div class="project-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Model Deployment & DevOps</h3>
+                    <p>Containerized ML models using Docker and Kubernetes. Deployed FastAPI endpoints for model serving and implemented CI/CD pipelines for production-ready systems.</p>
+                    <div class="tech-tags">
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>FastAPI</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Technical Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Technical Skills</h2>
+            <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3>ML & Data Science</h3>
-                    <ul>
-                        <li>Scikit-learn</li>
-                        <li>TensorFlow / PyTorch</li>
-                        <li>XGBoost</li>
-                        <li>Time Series Analysis</li>
-                    </ul>
+                    <h3><i class="fas fa-network-wired"></i> ML & Data Science</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">Time Series</span>
+                    </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3>Data & Tools</h3>
-                    <ul>
-                        <li>Pandas / NumPy</li>
-                        <li>Matplotlib / Seaborn</li>
-                        <li>Google Colab</li>
-                        <li>Jupyter Notebooks</li>
-                    </ul>
+                    <h3><i class="fas fa-database"></i> Data & Visualization</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Power BI</span>
+                    </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3>DevOps & Deployment</h3>
-                    <ul>
-                        <li>Docker</li>
-                        <li>Kubernetes</li>
-                        <li>GitHub</li>
-                        <li>CI/CD Pipelines</li>
-                    </ul>
+                    <h3><i class="fas fa-tools"></i> Development Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Google Colab</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-cube"></i> DevOps & Deployment</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">FastAPI</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-pie"></i> Advanced Techniques</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">SMOTE</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">RAG Systems</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Contact Section -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Let's Connect</h2>
+            <h2 class="section-title">Let's Connect</h2>
             <p class="contact-intro">I'm open to collaborations, job opportunities, and interesting data science projects. Feel free to reach out!</p>
-            
             <div class="contact-boxes">
                 <div class="contact-box">
                     <h3>Email</h3>
